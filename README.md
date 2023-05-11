@@ -1,4 +1,18 @@
 # AgroStream
 Repository for the Project of hydrological maps.
+
 Data from Bioportal was accessed via WFS service for QGIS and downloaded. 
+
 Data from Croatian Waters (HRvatske vode) was received upon request and is not included here (we did not request permission to publish the data).
+
+Water bodies play an important role in the hydrological cycle, but also a key role in maintaining the balance in the ecosystem, providing us with drinking water, water for irrigation and are an important factor to consider when planning urban and rural infrastructure.
+
+Information on water resources (both quality and availability) enables farmers to manage and use these resources sustainably and rationally. Hydrological data help scientists and professionals to understand water flows and the ecosystems that are closely linked to them, and to protect them. State and local governments also use these data for risk management and planning.
+
+In Croatia, the lack of uniform and up-to-date hydrological data leads to difficulties in planning the development, use and protection of water resources. In addition, responsibility for water management is currently divided among several large institutions: Ministry of Environmental Protection and Energy, Croatian Waters and units of regional and local administration. The data currently available mostly consists of outdated and scattered maps and data in machine-unreadable formats. However, most of the data is available upon request from the mentioned institutions.
+
+Our aim is to propose a solution that promotes collaboration between all stakeholders in hydrology, from farmers to scientists to government agencies. We propose a hydrological portal that collects hydrological data from multiple official sources and presents them in the form of parallel interactive maps. We created these parallel maps using the Mapview package in R - an open source software - and exported them to an HTML format for easy implementation on a website.
+
+In the alpha version (which focuses exclusively on Dubrovnik-Neretva County and will be extended to the national level) we have included open data on land waters and watercourses from Bioportal (first map). The second map consists of the same layers from Croatian waters (available on request), with slight differences in data quality between the two sources. The third map consists of "first-hand" records from users. The idea is that users can submit their data (by publishing it openly on the portal), which is then marked as unverified. After one of the government agencies has verified the data, the layer is verified and included in the official layers. In this way, users can also contribute to the development of the portal and improve the quality of the data. The final map consists of the locations of surface and groundwater monitoring stations. If you click on the station, you can see the values of the measured variables at that station in the form of a graph (colored dot in contrast to the values at other stations in gray). Zooming in/out or moving around on a particular map automatically does the same on all maps, making it easier to compare data from different sources without cluttering up a single map.
+
+Although water management policy does not seem to be an urgent issue in Croatia, given global warming and forecasting trends, we may face water deficits sooner than we think, both in drinking water and in water resources for agriculture. A hydrological portal would certainly be a step in the right direction to provide more professional support to farmers, leading to faster interventions and more successful management of water resources.
